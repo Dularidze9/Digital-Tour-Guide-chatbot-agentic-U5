@@ -52,7 +52,7 @@ Filtering out inappropriate content
 
 These parts are connected with edges that define how information moves between components.
 
-# Agent Logic
+## Agent Logic
 
 The agent begins by receiving a user question.
 If needed, it translates it into a suitable language.
@@ -60,18 +60,18 @@ It then decides whether the answer should come from stored data or from live web
 Once data is retrieved, the system checks for relevance, rewrites or adjusts the query if necessary, and finally creates the answer using a generative model.
 A final moderation step ensures that the response remains safe and appropriate for all audiences.
 
-# Visualization and Flow
+## Visualization and Flow
 
 LangGraph is used to define, visualize, and execute the agent’s workflow.
 Each node is a small Python function, and the edges define the logical flow — making debugging and modification straightforward.
 
-Testing Examples
+## Testing Examples
 
 The assistant can respond to questions about historical places, local weather, or cultural sites.
 It supports multilingual input, translating questions automatically before processing.
 The model produces accurate, context-grounded answers — verified against its retrieved information.
 
-Outcome
+## Outcome
 
 This small project shows how retrieval-based workflows and adaptive decision systems can work together to produce dynamic, useful conversational tools.
 The architecture can easily be extended for other cities or domains by replacing the document set and adjusting the routing logic.
